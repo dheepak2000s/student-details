@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>STUDENT DETAILS TASK</h1>
+    <h2>STUDENT FORM</h2>
+    <div class="form-container">
+        <form id="studentForm">
+            <label>Name: </label><input type="text" id="name" required><br>
+            <label>Age: </label><input type="text" id="age" required><br>
+            <label>Gender: </label>
+            <select id="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br>
+            <label>Course: </label>
+            <select id="course" required>
+                <option value="ReactJS">ReactJS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="ExpressJS">ExpressJS</option>
+                <option value="MongoDB">MongoDB</option>
+                <option value="NodeJS">NodeJS</option>
+            </select><br>
+            <label>E-mail: </label><input type="email" id="email" required><br>
+            <input type="submit" value="Save">
+        </form>
+    </div>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Course</th>
+                <th>E-mail</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
